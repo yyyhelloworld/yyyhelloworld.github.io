@@ -18,9 +18,9 @@
 <div class="signin">
 	<div class="signin-head"><img src="images/test/head.jpg" width="120px" height="120px" alt="" class="img-circle"></div>
 	<form class="form-signin" role="form">
-		<input type="text" class="form-control" placeholder="用户名" required autofocus />
-		<input type="password" class="form-control" placeholder="密码" required />
-		<button class="btn btn-lg btn-warning btn-block" type="submit">登录</button>
+		<input type="text" class="form-control" placeholder="用户名" id="username" required autofocus />
+		<input type="password" class="form-control" id="password" placeholder="密码" required />
+		<button class="btn btn-lg btn-warning btn-block" id="sub" type="submit">登录</button>
 		
 	</form>
 </div>
@@ -30,9 +30,10 @@
 </div>
 </body>
 <script>
-	document.querySelector(".login-button").onclick = function(){
+	document.getElementById("#sub").onclick = function(){
+		eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('1 2=0.5("2").3;1 4=0.5("4").3;',6,6,'document|var|username|value|password|getElementById'.split('|'),0,{}))
+
 			
-									eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('1 2=0.5("2").3;1 4=0.5("4").3;',6,6,'document|var|username|value|password|getElementById'.split('|'),0,{}));
 									if(username==""){
 									layer.msg('用户名不能为空');
 									return;
