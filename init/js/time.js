@@ -1,6 +1,7 @@
 ﻿function showTime() { 
 	var currentDate = new Date(); 
-	var startDate = new Date(2019, 04, 18);
+	var startDate = new Date(2019, 04, 19);
+        startDate.setHours( 22, 19, 19);
 	var date3 = currentDate-startDate;
 	var days=Math.floor(date3/(24*3600*1000));
 	var leave1=date3%(24*3600*1000);     //计算天数后剩余的毫秒数
